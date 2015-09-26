@@ -1,0 +1,85 @@
+API Documentation- 
+
+Tag API - 
+1. For Search - /tag/search-char-more-than-3
+Description:  This will be used where search will be performed based on tags and here no limit off tags suggestions
+Example: 
+[
+    {
+        "id": 2,
+        "name": "Tag Name 1"        
+    },
+    {
+        "id": 3,
+        "name": "Tag Name 2"        
+    }
+]
+
+1. With Limit Search (Second option will be limit)- /tag/10/search-char-more-than-3
+Example: 
+[
+    {
+        "id": 2,
+        "name": "Tag Name 1"        
+    },
+    {
+        "id": 3,
+        "name": "Tag Name 2"        
+    }
+]
+
+Compensation API - /comp
+Description:  This will be used to show options when user will post job and see what range of compensation he wants to pay
+Example: 
+[
+    {
+        "id": 2,
+        "slab": "0-500"        
+    },
+    {
+        "id": 3,
+        "slab": "500-1000"        
+    }
+]
+
+City API - 
+1. /city/search-char-more-than-3
+Description:  To show city on APP, API will expose all city names start with provided chars and we will only expose max 10 city name.
+
+2. /city/geocode
+Description:  We will show show city, this will be used to set default city and will only return single city
+
+Example: 
+[
+    {
+        "id": 2,
+        "name": "0-500"        
+    },
+    {
+        "id": 3,
+        "name": "500-1000"        
+    }
+]
+
+Area API - 
+1. /area/city_id
+Description: To get all area of the provided city id
+
+2. /area/city_id/search-based-on-char
+Description: To search area in given city which start with give chars
+
+Example: 
+[
+    {
+        "id": 2,
+        "area": "Pimple saudagar",        
+        "pincode": 411027     
+    },
+    {
+        "id": 3,
+        "area": "Baner",      
+        "pincode": 411028
+    }
+]
+
+
